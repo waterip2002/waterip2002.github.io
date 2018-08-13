@@ -146,7 +146,7 @@ header .fixed-width {
     text-align: center;
     width: 100%;
     line-height: 360px;
-    color: rgb(255, 254, 254,0.8);
+    color: rgba(255, 254, 254,0.8);
     letter-spacing: 3px;
     z-index: 3;
     font-size: 1.5em;  /*這是手機版才加大*/
@@ -199,7 +199,7 @@ footer p {
     color: rgb(230, 227, 227);
 }
 footer a {
-    color:  rgb(255, 255, 255,0.8);
+    color:  rgba(255, 255, 255,0.8);
     text-decoration: none;
 }
 @media screen and (max-width:600px) {
