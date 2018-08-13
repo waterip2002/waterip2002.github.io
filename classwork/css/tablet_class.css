@@ -124,7 +124,7 @@
     }
     header p {
         color: rgb(252, 250, 250,0.8);
-        font-size: 4px;
+        font-size: .6em;
         margin-bottom: 30px;
     }
     header .fixed-width {
@@ -213,7 +213,7 @@
         text-align: center;
         width: 100%;
         line-height: 360px;
-        color: rgb(255, 254, 254,0.8);
+        color: rgba(255, 254, 254,0.8);
         letter-spacing: 3px;
         z-index: 3;
             font-size: 1em; /*這個是為了蓋過手機板*/
