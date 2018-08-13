@@ -212,13 +212,13 @@ nav .search {
 }
 #items .col-4:hover .price {
     font-size: 14px;
-    color: rgb(250, 250, 250,0.9);
+    color: rgba(250, 250, 250,0.9);
 }
 #items .col-4:hover .mask {
     background-color: rgba(0, 0, 0, 0.5);
 }
 #items .col-4:hover .mask p {
-    color: rgb(250, 250, 250,0.9);
+    color: rgba(250, 250, 250,0.9);
 }
 #items .bor-b {
     border-bottom: 1px solid rgb(184, 171, 171);
