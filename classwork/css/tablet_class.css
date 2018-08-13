@@ -281,11 +281,11 @@
             /* ↑這邊要怎麼設定 才能讓 ICON 跟文字同一排???????? */
   }
     footer p {
-        color: rgb(199, 199, 199);
-        font-size: 10px;
+        color: rgb(219, 215, 215);
+        font-size: .8em;
     }
     footer a {
-        color:  rgb(199, 199, 199);
+        color: rgb(219, 215, 215);
         text-decoration: none;
     }
     /* COPYRIGHT */
