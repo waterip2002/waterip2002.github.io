@@ -1,0 +1,33 @@
+#product .col-3 {            /* 這堆是設定文字在圖片中間 */
+    position: relative;
+}
+#product .col-3 h4 {          /* 這堆是設定文字在圖片中間 */
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ↑這個方式 我的照片高度不夠 */
+
+#product .col-3 {            
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+#product .col-3 img {
+    position: absolute;
+    height: 300px;
+    width: auto;
+}
+#product .col-3 h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 300px;
+}
+
+/* ↑這個方式 我的照片寬度不夠 */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:600px) {
+            body {
+            background-color: rgb(199, 136, 136);
+            }
+        }
+        /* 媒體寬度480以下 選擇 第一組背景 */
+        @media screen and (min-width:1200px) {
+            body {
+            background-color: rgb(85, 145, 95);
+            }
+        }
+        /* 媒體寬度 1200以上 選擇 第二組背景 */
+        @media screen and (min-width:600px) and (max-width:1199px) {
+            body {
+            background-color: rgb(57, 85, 110);
+            }
+        }
+        /* 媒體寬度 481-1199 選擇 第三組背景 */
+        /* ------------------"and" CSS中的後面 一定要一個空格 很重要 ------------------- */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
