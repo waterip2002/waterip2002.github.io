@@ -80,7 +80,7 @@ nav {
     line-height: 50px;
     position: fixed;
     background-color:transparent;  /*為了蓋過手機板*/
-    background-image:repeating-linear-gradient(rgba(255, 255, 255, 0.2) 0%,rgb(255,255,255,0.5) 100%);
+    background-image:repeating-linear-gradient(rgba(255, 255, 255, 0.2) 0%,rgba(255,255,255,0.5) 100%);
     z-index: 9999;
 }
 nav .logo {
@@ -138,8 +138,8 @@ header h1 {
     letter-spacing: 10px;
 }
 header p {
-    color: rgb(252, 250, 250,0.8);
-    font-size: 1px;
+    color: rgba(252, 250, 250,0.6);
+    font-size: 1em;
     margin-bottom: 30px;
 }
 header .fixed-width {
@@ -220,7 +220,7 @@ header .fixed-width {
     text-align: center;
     width: 100%;
     line-height: 360px;
-    color: rgb(255, 254, 254,0.8);
+    color: rgba(255, 254, 254,0.8);
     letter-spacing: 3px;
     z-index: 3;
         font-size: 1em; /*這個是為了蓋過手機板*/

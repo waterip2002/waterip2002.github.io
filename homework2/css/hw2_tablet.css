@@ -99,6 +99,7 @@
             width: calc( 100% / 12 * 12 );
             text-align: center;
         }
+    }
     
     /* header */
     header .fixed-width {
@@ -163,14 +164,6 @@
     /* fresh */
     #fresh .fixed-width {
         background-color: rgba(235, 234, 233,.9);
-    }
-    #fresh .fixed-width::after {
-        content: "";
-        display: block;
-        background-color: rgb(0, 0, 0);
-        width: 570px;
-        height: 1px;
-        margin-top: 60px;
     }
     @media screen and (min-width:600px) and (max-width:1200px) {
         #fresh .col-8 {

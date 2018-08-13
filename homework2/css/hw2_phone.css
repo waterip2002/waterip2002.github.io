@@ -112,6 +112,12 @@
     #fresh .fixed-width {
         background-color: rgba(235, 234, 233,.9);
     }
+    .desktop-only {
+        display: none;
+    }
+    .mobal-only {
+        display: block;
+    }
     #fresh .col-4 {
         text-align: center;
         padding: 0 30px;
@@ -141,6 +147,10 @@
     #fresh a {
         color: rgb(235, 32, 93);
         text-decoration: underline;
+        padding-bottom: 20px;
+    }
+    #fresh .col-8 {
+        margin-top: 60px;
     }
     /* local */
     #local .fixed-width {
@@ -178,6 +188,9 @@
         text-decoration: underline;
     }
     /* picture */
+    #pictures {
+        display: none;
+    }
     #pictures .fixed-width {
         padding: 0;
     }

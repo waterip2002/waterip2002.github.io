@@ -55,6 +55,7 @@ body {
     position: fixed;
     bottom: 40px;
     right: 40px;
+    display: block;
 }
 #gotop a {
     color: rgba(0, 0, 0, 0.5);
@@ -162,9 +163,18 @@ header img {
     position: relative;
     top: 4px;
 }
+#story .col-7 {
+    height: 478px;
+}
 /* fresh */
 #fresh .fixed-width {
     background-color: rgba(235, 234, 233,.9);
+}
+.desktop-only {
+    display: block;
+}
+.mobal-only {
+    display: none;
 }
 #fresh .col-4 {
     text-align: center;
@@ -198,6 +208,10 @@ header img {
     color: black;
     position: relative;
     top: 4px;
+}
+#fresh .col-8 {
+    height: 533px;
+    margin-top: 0;
 }
 /* local */
 #local .fixed-width {
@@ -236,7 +250,13 @@ header img {
     position: relative;
     top: 4px;
 }
+#local .col-7 {
+    height: 503px;
+}
 /* picture */
+#pictures {
+    display: block;
+}
 #pictures .images img {
     position: relative;
     z-index: 998;
