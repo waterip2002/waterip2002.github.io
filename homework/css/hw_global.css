@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+ul,ol,li {
+    list-style: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+.full-width {
+    width: 100%;
+}
+img {
+    width: 100%;
+}

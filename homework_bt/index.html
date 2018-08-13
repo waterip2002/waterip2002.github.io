@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-pdbottom {
+            padding-bottom: 50px;
+        }   
+        .card-pd {
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        .line {
+            border-bottom: 1px rgb(88, 88, 88) solid;
+        }
+        .about-pd {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    </style>
+ 
+</head>
+<body>
+    <!-- nav -->
+    <div class="container fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-secondary bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="images/mei_logo.png" width="30" height="30" class="d-inline-block align-top" alt="mei_logo">
+                Draw in a Drawer
+            </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarused">
+          <span class="navbar-toggler-icon"></span>
+        </button>      
+        <div class="collapse navbar-collapse" id="navbarused">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link pl-5" href="#">About me</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pl-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Work</a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Book editor</a>
+                     <a class="dropdown-item" href="#">Illustration</a>
+                     <a class="dropdown-item" href="#">Clothes Design</a>
+                     <a class="dropdown-item" href="#">Web Design</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Another</a>
+                   </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle pl-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                   Gallery</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Realistic</a>
+                <a class="dropdown-item" href="#">Illustration</a>
+                <a class="dropdown-item" href="#">Lovely</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Another</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-5 pr-5" href="#">Contact</a>
+            </li>
+           </ul>
+            <ul class="navbar nav">
+            <li class="nav-item">
+                <a class="nav-link pl-3 text-muted" href="https://www.facebook.com/mei2017drawer/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-3 text-muted" href="https://www.instagram.com/mei.lin.5832/?hl=zh-tw" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-3 text-muted" href="https://case.518.com.tw/workroom-index-366489.html" target="_blank"><i class="far fa-address-book"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+<!-- Carousel -->
+    <div class="container pt-5 mt-2 carousel-pdbottom">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="#" target="_blank">
+                            <img class="d-block w-100" src="images/01.jpg" alt="First slide">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="#" target="_blank">
+                            <img class="d-block w-100" src="images/02.jpg" alt="Second slide">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="#" target="_blank">
+                            <img class="d-block w-100" src="images/03.jpg" alt="Third slide">
+                        </a>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+    </div>
+    <!-- line -->
+    <div class="container card-pd">
+        <div class="content text-center">
+            <h2>NEWS /</h2>
+            </div>
+        </div>
+    </div>
+    <!-- card -->
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/001.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-secondary">More</a>
+                    </div>
+                </div>
+            </div>                 
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/002.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-secondary">More</a>
+                    </div>
+                </div>
+            </div>                 
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/003.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-secondary">More</a>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </div>
+    <!-- About -->
+    <div class="container my-5" >
+        <div class="about-pd border-top bg-light">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <img src="images/mei_logo.png" alt="me">
+            </div>
+            <div class="col-lg-6 text-left">
+                <h2>Hello!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos recusandae, tempore maiores numquam repudiandae reiciendis reprehenderit eius quis! Ad, reiciendis.</p>
+                <div class="icon">
+                        <a class="pr-3 text-muted" href="https://www.facebook.com/mei2017drawer/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a class="pr-3 text-muted" href="https://www.instagram.com/mei.lin.5832/?hl=zh-tw" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a class="pr-3 text-muted" href="https://case.518.com.tw/workroom-index-366489.html" target="_blank"><i class="far fa-address-book fa-lg"></i></a>
+                </div>
+                <a href="#" class="btn btn-outline-secondary my-5">Read More...</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Q&A -->
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-12 py-5">
+                <div class="content text-center">
+                    <h2>Q & A /</h2>
+                </div>
+            </div>
+        </div>
+            <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            I. How to contact me?
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            II. How to use this web?
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            III. Where to shop?
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer text-center">
+                <p> &copy;DRAW IN A DRAWER.</p>
+                <p>2018 MADE BY <i class="fas fa-heart"></i>
+                <a href="#">MEI LIN</a></p>
+                               
+        </footer>
+    </div>
+</body>
+</html>

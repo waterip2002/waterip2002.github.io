@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif,’微軟正黑體‘;
+}
+html,body,h1,h2,h3,h4,h5,h6,a,img,ol,ul,li{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+ul,ol,li{
+    list-style: none;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+.full-width {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+p {
+    line-height: 1.2em;
+    color: rgb(85, 83, 83);
+}

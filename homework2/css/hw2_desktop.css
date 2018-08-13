@@ -1,0 +1,313 @@
+@media screen and ( min-width: 1200px ) {
+.col-1 {
+    width: calc( 100% / 12 * 1 );
+}
+.col-2 {
+    width: calc( 100% / 12 * 2 );
+}
+.col-3 {
+    width: calc( 100% / 12 * 3 );
+}
+.col-4 {
+    width: calc( 100% / 12 * 4 );
+}
+.col-5 {
+    width: calc( 100% / 12 * 5 );
+}
+.col-6 {
+    width: calc( 100% / 12 * 6 );
+}
+.col-7 {
+    width: calc( 100% / 12 * 7 );
+}
+.col-8 {
+    width: calc( 100% / 12 * 8 );
+}
+.col-9 {
+    width: calc( 100% / 12 * 9 );
+}
+.col-10 {
+    width: calc( 100% / 12 * 10 );
+}
+.col-11 {
+    width: calc( 100% / 12 * 11 );
+}
+.col-12 {
+    width: calc( 100% / 12 * 12 );
+}
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+[class*="col"] {
+    float: left;
+}
+body {
+    background-image: url(../images/body_bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* gotop */
+#gotop {
+    float: right;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+#gotop a {
+    color: rgba(0, 0, 0, 0.5);
+}
+#gotop a:hover {
+    color: rgba(0, 0, 0, 0.801);
+
+}
+/* nav */
+nav .fixed-width {
+    margin-top: 120px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+    url(../images/nav_bg.jpg);
+    background-repeat: repeat-x;
+
+}
+nav {
+    line-height: 80px;
+    font-size: 1em;
+}
+nav a{
+    color: rgb(0, 0, 0);
+}
+nav .col-2 {
+    padding-left: 40px;
+}
+nav .col-2 a {
+    color: #000;
+}
+nav h2 {
+    height: 58px;
+    font-size: 1.8em;
+}
+nav .col-2::after {
+    content: "";
+    display: block;
+    width: 10px;
+    background-color:  rgb(235, 32, 93);
+    margin-left: 38px;
+    padding: 3px;
+    
+}
+nav .col-10 ul li {
+    float: right;
+    padding-right: 40px;
+}
+nav .col-10 a:hover {
+    color: rgb(235, 32, 93);
+    position: relative;
+    top: 3px;
+}
+/* header */
+header .fixed-width {
+    height: 580px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+    url(../images/nav_bg.jpg);
+    line-height: 650px;
+    text-align: center;
+}
+header img {
+    width: 170px;
+    height: 170px;
+}
+/* down */
+#down .fixed-width {
+    height: 80px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+    url(../images/nav_bg.jpg);
+    text-align: center;
+    color: rgb(235, 32, 93);
+}
+/* story */
+#story .fixed-width {
+    background-color: rgba(235, 234, 233,.9);
+}
+#story .col-5 {
+    text-align: center;
+    padding: 0 60px;
+    padding-top: 100px;
+    float: left;
+}
+#story h2 {
+    margin-bottom: 40px;
+    font-size: 2.4em;
+}
+#story h2::after {
+    content: "";
+    width: 20px;
+    display: block;
+    text-align: center;
+    background-color: rgb(235, 32, 93);
+    padding: 3px;
+    margin: auto;
+    margin-top: 20px;
+}
+#story a {
+    color: rgb(235, 32, 93);
+    text-decoration: none;
+}
+#story a:hover {
+    color: black;
+    position: relative;
+    top: 4px;
+}
+/* fresh */
+#fresh .fixed-width {
+    background-color: rgba(235, 234, 233,.9);
+}
+#fresh .col-4 {
+    text-align: center;
+    padding: 0 60px;
+    padding-top: 60px;
+}
+#fresh .col-4 img {
+    width: 150px;
+    height: auto;
+    padding-bottom: 20px;
+}
+#fresh h2 {
+    margin-bottom: 40px;
+    font-size: 2.4em;
+}
+#fresh h2::after {
+    content: "";
+    width: 20px;
+    display: block;
+    text-align: center;
+    background-color: rgb(235, 32, 93);
+    padding: 3px;
+    margin: auto;
+    margin-top: 20px;
+}
+#fresh a {
+    color: rgb(235, 32, 93);
+    text-decoration: none;
+}
+#fresh a:hover {
+    color: black;
+    position: relative;
+    top: 4px;
+}
+/* local */
+#local .fixed-width {
+    background-color: rgba(235, 234, 233,.9);
+}
+#local .col-5 {
+    text-align: center;
+    padding: 0 60px;
+    padding-top: 60px;
+}
+#local .col-5 img {
+    width: 130px;
+    height: auto;
+    padding-bottom: 20px;
+}
+#local h3 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+#local h3::after {
+    content: "";
+    width: 20px;
+    display: block;
+    text-align: center;
+    background-color: rgb(235, 32, 93);
+    padding: 3px;
+    margin: auto;
+    margin-top: 20px;
+}
+#local a {
+    color: rgb(235, 32, 93);
+    text-decoration: none;
+}
+#local a:hover {
+    color: black;
+    position: relative;
+    top: 4px;
+}
+/* picture */
+#pictures .images img {
+    position: relative;
+    z-index: 998;
+}
+#pictures .images .mask {
+    display: block;
+    width: 1200px;
+    height: 709px;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0);
+    transition: all .3s;
+    color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    text-align: center;
+    line-height: 709px;
+    font-size: 3em;
+}
+#pictures .images:hover .mask{
+    background-color: rgba(0, 0, 0,.4);
+    color: aliceblue;
+}
+/* contact */
+#contact .fixed-width {
+    height: 350px;
+    background-color:  rgba(235, 234, 233,.9);
+    text-align: left;
+}
+#contact .col-7 {
+    padding-left: 50px;
+    padding-top: 80px;
+}
+#contact h1 {
+    padding-bottom: 30px;
+    font-size: 1.8em;
+}
+#contact h1::after {
+    content: "";
+    width: 20px;
+    display: block;
+    padding: 3px;
+    background-color:rgb(235, 32, 93);
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#contact p {
+    padding-bottom: 20px;
+}
+#contact .phone{
+    padding-bottom: 10px;
+}
+#contact .mail {
+    padding-bottom: 10px;
+}
+#contact i {
+    padding-right: 10px;
+}
+#contact .col-5 {
+    padding-right: 50px;
+    padding-top: 250px;
+}
+#contact .col-5 a {
+    float: right;
+    color: #000;
+    padding-right: 10px;
+    text-decoration: none;
+}
+#contact .col-5 a:hover {
+    color: rgb(235, 32, 93);
+}
+/* footer */
+footer .col-12 {
+    height: 120px;
+}
+}

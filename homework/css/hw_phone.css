@@ -1,0 +1,252 @@
+     
+    .fixed-width {
+        width: 100%;
+    }
+    [class*="col"] {
+        width: 100%;
+        padding: 15px;
+    }
+    .btn {
+        display: inline-block;
+        line-height: 20px;
+        padding: 5px 20px;
+        border: 1px rgb(151, 121, 66) solid;
+        color: rgba(151, 121, 66);
+        margin: 25px  0;
+    
+    }
+    /* .btn:hover {
+        color: rgb(0, 0, 0);
+        border: 1px rgba(0, 0, 0) solid;
+    
+    } */
+    /* gotop */
+    #gotop {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        opacity: 0;
+    }
+    /* #gotop a {
+        color: rgba(197, 167, 110, 0.3);
+    }
+    #gotop a:hover {
+        color:rgba(197, 167, 110, 0.6);
+    } */
+    /* nav */
+    nav {
+        /* height: 80px; */
+        background-color: rgba(197, 167, 110, 0.3);
+        line-height: 50px;
+        /* overflow: hidden; */
+    }
+    nav li {
+        border-bottom: 1px solid #000;
+    }
+    /* nav .col-7 span {
+        display: block;
+        margin-top: -60px;
+    } */
+    /* nav .col-7 span::first-letter {
+        content: "";
+        display: block;
+        padding-top: 2px;
+        border-top: 1px solid rgb(0, 0, 0);
+    } */
+    /* nav .col-7 a:hover span {
+        margin-top: 0px;
+    }     */
+    nav .menu a {
+        color: rgb(12, 5, 5);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    nav .logo {
+        font-size: 25px;
+        font-weight: 700;
+        /* float: right; */
+        /* padding-right: 40px; */
+        letter-spacing: 2px;
+        /* position: fixed; */
+    }
+    @media screen and (max-width:600px) {
+            nav .col-pd0{
+            padding: 0 10px;
+            }
+            nav .pc_only{
+                display: none;
+            }
+    }
+    nav .col-7 li {
+        /* float: left; */
+        /* padding-right: 40px; */
+    }
+ 
+
+    nav .col-3 .network {
+        /* display: none; */
+        /* float: right; */
+    }
+    nav .col-3 .network a {
+        padding-right: 15px;
+        color:  rgba(44, 30, 5, 0.4);
+    }
+    /* nav .col-3 .network a:hover {
+        color: rgb(0, 0, 0);
+    } */
+
+    /* header */
+    header .fixed-width {
+        /* position: relative; */
+        height: 300px;
+    }
+    header .content {
+        /* position: absolute; */
+        display: block;
+        /* width: 700px; */
+        /* right: 0px; */
+        /* top: 120px; */
+        text-align: center;
+        padding-top: 100px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header .content a {
+        display: inline-block;
+        margin-left: 5px;
+        color: rgba(202, 141, 28, 0.8);
+    }
+    /* header .content a:hover {
+        color:  rgba(44, 30, 5, 0.4);
+    } */
+    
+    /* product */
+    #product {
+        height: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    @media screen and (max-width:600px) {
+      
+        #product .col-4 .mask {
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+        }
+
+    }
+    /* #product img {
+        position: relative;
+        z-index: 10;
+    } */
+    /* #product .col-4 .mask {
+        display: block;
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        z-index: 11;
+        text-align: center;
+        line-height: 360px;
+        opacity: 0;
+        letter-spacing: 2px;
+        transition: all .6s;
+        font-size: 1.5em;
+    }
+    #product .col-4 a:hover .mask {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: rgb(252, 252, 252);
+    } */
+    /* about me */
+    #about {
+        height: auto;
+        background-color:rgba(197, 167, 110, 0.3);
+    }
+    #about h2 {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    @media screen and (max-width:600px) {
+        #about h4 {
+            text-align: center;
+        }
+        #about .btn {
+            display: block;
+            text-align: center;
+        }
+        #about .icon {
+            text-align: center;
+        }
+    }
+    #about p {
+        text-align: center;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    #about i {
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    #about .col-4 a {
+        color: rgba(151, 121, 66);
+    }
+    /* #about a:hover {
+        color:rgba(0, 0, 0, .9);
+    
+    } */
+    /* started */
+    #start {
+        height: 700px;
+        background-color: rgba(151, 121, 66,.7);
+    }
+    #start .fixed-width {
+        text-align: center;
+        padding-top: 200px;
+    }
+    #start h2 {
+        font-size: 3em;
+        letter-spacing: 2px;
+        padding: 20px 0;
+    }
+    /* #start .btn {
+        color:rgb(241, 239, 234);
+        border: 2px rgb(241, 239, 234) solid;
+        padding: 20px 40px;
+        font-size: 1.5em;
+    } */
+    @media screen and (max-width:600px) {
+        #start .btn {
+            display: block;
+            line-height: 20px;
+            width: 90%;
+            padding: 6px 20px;
+            margin: auto;
+            border: 1px rgb(253, 253, 252) solid;
+            color: rgb(248, 246, 242);
+        }
+        #start p {
+            font-size: 1.1em;
+        }
+    }
+    /* #start .btn:hover {
+        color:rgba(44, 30, 5, 0.9);
+        border: 2px rgba(44, 30, 5, 0.9) solid;
+        font-size: 1.5em;
+    } */
+    /* footer */
+    footer {
+        height: 80px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    footer a {
+        color: rgba(202, 141, 28, 0.8);
+    }
+    footer a:hover {
+        color:  rgba(44, 30, 5, 0.9);
+    }
+    footer i {
+        letter-spacing: 13px;
+    } 
