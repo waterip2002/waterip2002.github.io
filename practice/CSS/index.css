@@ -129,6 +129,7 @@ nav li {
 nav span {
     display: block;
     margin-top: -65px;
+    text-align: center;
 }
 nav a:hover span {
     margin-top: 0;
