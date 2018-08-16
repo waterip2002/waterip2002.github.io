@@ -167,6 +167,7 @@
         padding-top: 80px;
         padding-bottom: 20px;
         letter-spacing: 2px;
+        font-size: 1.8em;
     }
     @media screen and (max-width:600px) {
         #about h4 {
@@ -183,7 +184,7 @@
     #about p {
         text-align: center;
         font-size: 13px;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgb(51, 50, 50);
     }
     #about i {
         letter-spacing: 5px;
@@ -194,15 +195,15 @@
     }
     /* started */
     #start {
-        height: 700px;
+        height: 500px;
         background-color: rgba(151, 121, 66,.7);
     }
     #start .fixed-width {
         text-align: center;
-        padding-top: 200px;
+        padding-top: 130px;
     }
     #start h2 {
-        font-size: 3em;
+        font-size: 2em;
         letter-spacing: 2px;
         padding: 20px 0;
     }
@@ -213,26 +214,23 @@
             width: 90%;
             padding: 6px 20px;
             margin: auto;
-            border: 1px rgb(0, 0, 0) solid;
-            color: rgb(0, 0, 0);
+            border: 1px rgb(51, 50, 50) solid;
+            color: rgb(51, 50, 50);
         }
         #start p {
-            font-size: 1em;
-            color: rgba(0, 0, 0, 0.76);
+            font-size: 13px;
+            color: rgb(51, 50, 50);
 
         }
     }
     /* footer */
     footer {
-        height: 80px;
-        padding-top: 50px;
+        height: 60px;
+        padding-top: 30px;
         text-align: center;
     }
     footer a {
         color: rgba(202, 141, 28, 0.8);
-    }
-    footer a:hover {
-        color:  rgba(44, 30, 5, 0.9);
     }
     footer i {
         letter-spacing: 13px;

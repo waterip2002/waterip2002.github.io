@@ -269,7 +269,7 @@
     }
     /* contact */
     #contact .fixed-width {
-        height: 380px;
+        height: 400px;
         background-color:  rgba(235, 234, 233,.9);
     }
     #contact .col-7 {
@@ -318,6 +318,16 @@
         padding-right: 10px;
         margin-bottom: 60px;
         text-align: center;
+    }
+    #contact .col-8 {
+        color: rgba(0, 0, 0, 0.329);
+        font-size: .8em;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+    #contact .col-8 a {
+        color: rgb(235, 32, 93);
     }
     /* footer */
     footer .col-12 {

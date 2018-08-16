@@ -266,15 +266,17 @@ header img {
 /* picture */
 #pictures {
     display: block;
+    height: 713px;
 }
 #pictures .images img {
+    height: 713px;
     position: relative;
     z-index: 998;
 }
 #pictures .images .mask {
     display: block;
     width: 1200px;
-    height: 709px;
+    height: 713px;
     position: absolute;
     background-color: rgba(0, 0, 0,0);
     transition: all .3s;
@@ -290,7 +292,7 @@ header img {
 }
 /* contact */
 #contact .fixed-width {
-    height: 350px;
+    height: 370px;
     background-color:  rgba(235, 234, 233,.9);
     text-align: left;
 }
@@ -334,6 +336,16 @@ header img {
     text-decoration: none;
 }
 #contact .col-5 a:hover {
+    color: rgb(235, 32, 93);
+}
+#contact .col-8 {
+    padding-right: 65px;
+    color: rgba(0, 0, 0, 0.329);
+    font-size: .8em;
+    width: 100%;
+    text-align: right;
+}
+#contact .col-8 a {
     color: rgb(235, 32, 93);
 }
 /* footer */

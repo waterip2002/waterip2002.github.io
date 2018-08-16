@@ -181,7 +181,7 @@ nav .col-3 .network a {
     }
     #about p {
         font-size: 14px;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgb(51, 50, 50);
         text-align: left;   /* 蓋手機*/
     }
     #about i {
@@ -209,11 +209,16 @@ nav .col-3 .network a {
         letter-spacing: 2px;
         padding: 20px 0;
     }
+    #start .content {
+        width: 500px;
+        margin: auto;
+        color: rgb(51, 50, 50);
+    }
     #start .btn {
-        color:rgba(0, 0, 0, 0.6);
-        border: 2px rgba(0, 0, 0, 0.6) solid;
-        padding: 10px 40px;
-        font-size: 1em;
+        color: rgb(51, 50, 50);
+        border: 1px rgb(51, 50, 50) solid;
+        padding: 20px 40px;
+        font-size: 1.2em;
     }
     /* #start .btn:hover {
         color:rgba(44, 30, 5, 0.9);
