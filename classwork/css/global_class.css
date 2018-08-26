@@ -18,6 +18,7 @@ ul,ol,li {
 }
 img {
     width: 100%;
+    vertical-align: top;
 }
 .full-width {
     width: 100%;

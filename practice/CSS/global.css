@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif,"微軟正黑體";
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+p {
+    color: rgb(100, 76, 57);
+}
+/* GLOBAL */
+
+.full-width {
+    width: 100%;
+}
+.fixed-width {
+    width: 1600px;
+    margin: auto;
+}
+#goTop {
+    float: right;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+#goTop a {
+    color: rgba(0, 0, 0, 0.5);
+}
+#goTop a:hover {
+    color:  rgba(0, 0, 0, 0.8);
+}
+/* 區塊 */
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+[class*="col"] {
+    float: left;
+    padding: 15px;
+}
