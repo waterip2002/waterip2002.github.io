@@ -36,11 +36,12 @@ p {
 #goTop {
     float: right;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 888;
 }
 #goTop a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
 }
 #goTop a:hover {
     color:  rgba(0, 0, 0, 0.8);
@@ -84,5 +85,4 @@ p {
 }
 [class*="col"] {
     float: left;
-    padding: 15px;
 }

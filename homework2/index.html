@@ -13,11 +13,47 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script language="javascript">
-            $(function(){
+        $(document).ready(function(){
+            $("#down").click(function(){
+                let tar = $("#story").offset().top;
+                $("html,body").animate({
+                    scrollTop: tar
+                },900);
+            });
+            $("nav a").click(function(){
+                let target = $(this).data("target");
+                let _offset = $(target).offset().top;
+                $("html,body").animate({
+                    scrollTop: _offset
+                },900);
+            });
+            $(".toggler").click(function(){
+                $(".menu").slideToggle();
+            });
+            $("#gotop").hide();
+            $(window).scroll(function(){
+                let h = $(this).scrollTop();
+                if (h > 900){
+                    $("#gotop").fadeIn();
+                } else {
+                    $("#gotop").fadeOut();
+                }
+            });
+
             $("#gotop").click(function(){
             $("html,body").animate({scrollTop:0},900);
             return false;
             });
+            });
+            $(window).resize(function(){
+                let w = $(this).width();
+                if (w > 600 ) {
+                    $(".toggler").hide();
+                    $(".menu").show();
+                } else {
+                    $(".toggler").show();
+                    $(".menu").hide();
+                }
             });
             </script>
 </head>
@@ -29,18 +65,19 @@
     <!-- nav -->
     <nav class="full-width">
         <div class="fixed-width clearfix">
-
+                <div class="toggler"><span></span></div>
                 <div class="col-2">
                     <h2><a href="#">LOGO</a></h2>
                 </div>
                 <div class="col-10">
+                    <div class="menu">
                     <ul>
-                        <li><a href="#contact_us">Contact Us</a></li>
-                        <li><a href="#local">Local Distillation</a></li>
-                        <li><a href="#fresh_fare">Fresh Fare</a></li>
-                        <li><a href="#our_story">Our Story</a></li>
-
+                        <li><a href="javascript:;" data-target="#contact">Contact Us</a></li>
+                        <li><a href="javascript:;" data-target="#local">Local Distillation</a></li>
+                        <li><a href="javascript:;" data-target="#fresh">Fresh Fare</a></li>
+                        <li><a href="javascript:;" data-target="#story">Our Story</a></li>
                     </ul>
+                </div>
                 </div>
             </div>
     </nav>
@@ -49,14 +86,14 @@
         <div class="fixed-width clearfix">
             <img src="images/header01.png" alt="logo">
         </div>
-    </header>
-    <!-- down -->
-    <div id="down" class="full-width">
-        <div class="fixed-width clearfix">
-            <i class="fas fa-chevron-down fa-3x"></i>
+        <div id="down">
+            <div class="fixed-width clearfix">
+                <i class="fas fa-chevron-down fa-3x"></i>
+            </div>
         </div>
+    </header>
 
-    </div>
+
 <!-- story -->
 <div id="story" class="full-width">
     <div class="fixed-width clearfix">
@@ -80,7 +117,7 @@
             <img src="images/fresh_01.png"  alt="flower">
             <h2 >FRESH FARE</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ipsum maxime rem porro facilis ratione temporibus odit quam perferendis! Soluta quis a sequi. Totam, magni? Consequuntur ex voluptate modi repellat.</p>
-            <a href="#">FRESH</a>
+            <a href="#">MORE</a>
         </div>
     </div>
 </div>

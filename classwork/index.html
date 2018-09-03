@@ -5,17 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>上課版面</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="css/global_class.css">
     <link rel="stylesheet" href="css/phone_class.css">
     <link rel="stylesheet" href="css/tablet_class.css">
     <link rel="stylesheet" href="css/desktop_class.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script>
+       $(document).ready(function(){
+           $("#gotop").hide();
+           $(window).scroll(function(){
+               let h =$("body,html").scrollTop();
+               if (h>1000){
+                   $("#gotop").fadeIn();
+               } else {
+                   $("#gotop").fadeOut();
+               }
+           });
+        $(window).resize(function(){
+            let w = $(this).width();
+            if (w > 600) {
+                $(".menu").show();
+            } else {
+                $(".menu").hide();
+            }
+        
+        });
+        $(".toggler").click(function(){
+            $(".menu").slideToggle();
+            $(".toggler").toggleClass("togglerX");
+        });
+        $("#gotop").click(function(){
+            $("html,body").animate({scrollTop:0},900);
+            return false;
+        });
+    });
+    </script>
 </head>
 <body>
     <!-- ↓選單 -->
     <nav class="full-width">
         <div class="fixed-width">
+            <div class="toggler">
+                <span></span>
+            </div>
             <div class="logo">
                 <h1> LOGO </h1>
             </div>
@@ -252,5 +286,6 @@
             </div>
         </div>
     </div>
+    <div id="gotop">TOP</div>
 </body>
 </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAN CLOTHES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/accessory_hats.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <script>
+    //     // 點小圖換大圖
+    // $(document).ready(function(){
+    //      $(".w-small-pics img").click(function(){
+    //          let target = $(this).attr("src");
+    //          let big = $(".w-big-pics img");
+    //          big.attr("src",target);
+    //          console.log(target);
+    //     });
+    // });
+        // 點文字展開收合
+    $(document).ready(function(){
+        $(".w-a02-1").hide();
+        $(".w-a02").click(function(){
+            $(this).next().slideToggle(400);
+        });
+        $(".w-a01").click(function(){
+            $(this).next().slideToggle(400);
+        });
+    });
+    </script>
+</head>
+<body>
+        <!-- NAV -->
+        <nav class="full-width">
+            <div class="fixed-width">
+                <div class="logo">
+                        <a href="index.html"><h2>LAN CLOTHES</h2></a>
+                    </div>
+                <div class="search">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>  
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
+                        <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
+                        <li><a href="#"><span>形象合集</span>LOOKBOOK</a></li>
+                        <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
+                        <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
+                        <li><a href="#"><span>新品</span>NEW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ITEMS -->
+        <div id="items" class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-12">
+                    <div class="col-2">
+                        <div class="top_logo"><img src="images/queen.png" alt="queen_icon"></div>
+                    </div>
+                    <div class="col-10 bor-b">
+                        <a href="index.html"> 首頁 </a> > <a href="women.html">WOMEN</a> > <a href="#">SHORT SLEEVE</a>
+                            <div class="w-icon">
+                                    <a href="#" title="上一頁">◀︎ PREVIOUS</a> 
+                                    <a href="#" title="下一頁">NEXT ▶︎</i></a>
+                                </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                        <h4>配件 ACCESSORY /</h4>
+                        <ul>
+                           <li><a href="#">
+                             <span class="en">WALLETS</span>
+                             <span class="ch">長/短皮夾</span>
+                           </a></li>
+                           <li><a href="#">
+                             <span class="en">BAGS</span>
+                             <span class="ch">包款</span>
+                           </a></li>
+                           <li><a href="#">
+                             <span class="en">WATCHES</span>
+                             <span class="ch">手錶</span>
+                           </a></li>
+                           <li><a href="#">
+                             <span class="en">HATS</span>
+                             <span class="ch">帽子</span>
+                           </a></li>
+                           <li><a href="#">
+                             <span class="en">SILKS</span>
+                             <span class="ch">絲巾</span>
+                           </a></li>
+                        </ul>
+                </div>
+                <div class="col-10 clearfix">
+                    <div class="col-5">
+                        <div class="accessory_img">
+                        <a href="images_ac/ac01.jpg" data-fancybox="gallery" data-caption="米色編織紳士帽">
+                            <img src="images_ac/ac01.jpg" ßalt="ac01.jpg" /></a>
+                        <a href="images_ac/ac02.jpg" data-fancybox="gallery" data-caption="寬緞帶編織紳士帽"></a>
+                        <a href="images_ac/ac03.jpg" data-fancybox="gallery" data-caption="鄉村風花朵編織帽"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 clearfix">
+                        <h2>米色編織紳士帽</h2>
+                        <div class="col-8">
+                            <p>商品編號：A0000001</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="w-price">NT. 1290</div>
+                            </div>
+                        <div class="col-12">
+                            <div class="w-size">尺寸 / F</div>
+                            <a href="#"><div class="size-chart">SIZE CHART 尺寸說明</div></a>
+                            <div class="w-0">顏色 /</div>
+                            <div class="w-0-white"></div>
+                            <div class="w-0-pink"></div>
+                            <div class="w-0-blue"></div>
+                            <div class="w-0-black"></div>
+                            <div class="w-a01">商品描述 /</div>
+                            <div class="w-a01-1">
+                            <p>圓領短袖上衣，胸前骷髏手圖案膠印。</p>
+                            <p>材質：100%棉</p>
+                            <p>產地：中國</p>
+                            </div>
+                            <div class="w-a02">注意事項 /</div>
+                            <div class="w-a02-1">
+                            <ul>
+                                <li>水溫不可超過30度。</li>
+                                <li>深淺色請分開洗滌。</li>
+                                <li>不可漂白。</li>
+                                <li>不可烘乾。</li>
+                                <li>不可乾洗。</li>
+                                <li>建議低溫熨燙及壓燙 (蒸氣燙可能導致不可回復之損傷)。</li>
+                                <li>建議放置大小適中之細網洗衣袋弱速水洗。</li>
+                            </ul>
+                            </div>
+                            <a href="#"><div class="btn"> BUY NOW </div></a>
+                        
+                        </div>
+                    </div>
+                <div class="col-12">
+                    <h2>STYLE LOOK /</h2>
+                    <div class="ac_photos"> 
+                        <img src="images_ac/ac02.jpg" alt="">
+                        <img src="images_ac/ac03.jpg" alt="">
+                        <img src="images_ac/ac01.jpg" alt="">
+                        <img src="images_ac/ac03.jpg" alt="">
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 頁腳 -->
+        <footer class="full-width clearfix">
+                <div class="col-6">
+                <p>COPYRIGHT &copy; 2018 LAN CLOTHES CO.LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-5">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-line fa-2x"></i></a>
+                </div>
+
+        </footer>
+</body>

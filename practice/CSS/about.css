@@ -52,11 +52,10 @@ nav .search {
     font-size: 18px;
 }
 #items .fixed-width {
-    height: 900px;
+    height: 800px;
 }
-#items .col-2 img {
-    width: 100px;
-    height: 80px;
+#items .col-2 .top_logo {
+    width: 120px;
     padding-left: 10px;
 }
 #items .col-2 ul {
@@ -69,7 +68,7 @@ nav .search {
 #items .col-2 {
     overflow: hidden;
 }
-.en {
+#items .col-2 .en {
     float: left;
 }
 #items .col-2 .ch {
@@ -95,9 +94,6 @@ nav .search {
 #items .col-2 a {
     display: block;
 }
-#items .col-12 .col-10 {
-    padding-top: 40px;
-}
 #items .col-10 .col-7 {
     padding-left: 50px;
     padding-top: 0px;
@@ -113,7 +109,6 @@ nav .search {
 }
 #items .col-10 img {
     padding-top: 50px;
-    padding-bottom: 50px;
     width: 300px;
 }
 /* footer */
@@ -124,7 +119,7 @@ footer {
 }
 footer .col-6 {
     text-align: right;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 footer .col-6 p {
     color: rgba(83, 46, 33, 0.5);

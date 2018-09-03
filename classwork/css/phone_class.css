@@ -1,3 +1,8 @@
+@media screen and (max-width:599px){
+    #gotop {
+        display: none!important;
+    }
+}
 p {
     font-size: 14px;
     color: rgb(117, 145, 155);
@@ -22,27 +27,95 @@ p {
 
 /* NAV */
 nav {
-    /* height: 50px; */
     line-height: 50px;
-    /* position: fixed; */
-    background-color: rgb(117, 145, 155,0.6);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
 }
 nav .logo {
-    color: rgb(243, 243, 243);
-    background-color: rgb(94, 126, 138);
-    padding-left: 20px;
+    color: rgb(205, 205, 205);
+    padding-left: 30px;
+}
+nav .menu {
+    display: none;
 }
 nav li {
     border-bottom: 1px solid #000;
 }
 nav a {
-    color: rgb(7, 0, 0);
+    color: rgb(201, 200, 200);
     text-decoration: none;
     display: block;
     padding: 0 20px;
 }
 nav .search {
     display: none;
+}
+nav .toggler {
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+nav .toggler span {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: rgb(176, 176, 176);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+nav .toggler span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    background-color: rgb(176, 176, 176);
+    top: 0;
+    right: 0;
+    bottom: 20px;
+    left: -6px;
+    margin: auto;
+    transition: all .3s;
+}
+nav .toggler span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    background-color: rgb(176, 176, 176);
+    top: 0;
+    right: 0;
+    bottom: -20px;
+    left: 0px;
+    margin: auto;
+    transition: all .3s;
+}
+nav .togglerX span {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: rgb(176, 176, 176);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+nav .togglerX span::before {
+    width: 13px;
+    left: 0px;
+}
+nav .togglerX span::after {
+    width: 34px;
+    left: -5px;
 }
 /* HEADER */
 header {
@@ -119,6 +192,9 @@ header .fixed-width {
      }
 }
 /* PRODUCT */
+#product {
+    z-index: 998;
+}
 #product .col-3 {            
     position: relative;
     height: 360px;

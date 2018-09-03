@@ -10,14 +10,19 @@
         background-size: cover;
     }
     /* gotop */
+    @media screen and (max-width:600px) {
     #gotop {
         float: right;
         position: fixed;
         bottom: 40px;
         right: 40px;
-        display: none;
+        display: none!important;
     }
+}
     /* nav */
+    nav {
+        line-height: 60px;
+    }
     nav .fixed-width {
         background-image: 
         linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
@@ -25,8 +30,45 @@
         background-repeat: repeat-x;
         padding: 0;
     }
-    nav {
-        line-height: 60px;
+    nav .toggler {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: right;
+    }
+    nav .toggler span {
+        width: 30px;
+        height: 2px;
+        display: block;
+        background-color: rgb(235, 32, 93);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    nav .toggler span::before,nav .toggler span::after {
+        content:"";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: rgb(235, 32, 93);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 20px;
+        margin: auto;
+    }
+    nav .toggler span::after {
+        bottom: -20px;
+    }
+    nav .toggler span::before {
+        bottom: 20px;
+    }
+    nav .menu {
+        display: none;
     }
     nav .col-2 a {
         color:  rgb(235, 32, 93);
@@ -57,26 +99,37 @@
     }
     /* header */
     header .fixed-width {
-        height: 450px;
+        /* height: 450px; */
         background-image: 
         linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
         url(../images/nav_bg.jpg);
-        line-height: 500px;
+        /* line-height: 500px; */
         text-align: center;
+        height: 300px;
+        position: relative;
     }
     header img {
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
     /* down */
-    #down .fixed-width {
+    #down {
+        display: none;
+    }
+    /* #down .fixed-width {
         height: 80px;
         background-image: 
         linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
         url(../images/nav_bg.jpg);
         text-align: center;
         color: rgb(235, 32, 93);
-    }
+    } */
     /* story */
     #story .fixed-width {
         background-color: rgba(235, 234, 233,.9);

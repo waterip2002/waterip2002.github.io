@@ -1,5 +1,20 @@
 @media screen and (min-width: 600px) and (max-width:1200px) {
-        /* 這個是表示 媒體寬度601-1199時，使用此CSS */
+    /* 這個是表示 媒體寬度601-1199時，使用此CSS */
+    #gotop {
+        float: left;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        position: fixed;
+        bottom: 50px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.577);
+        color: #fff;
+        text-decoration: none;
+        z-index: 9999;
+        cursor: pointer;
+        }
     p {
         font-size: 14px;
         color: rgb(117, 145, 155);
@@ -22,10 +37,6 @@
     }
     /* ↑這個是按鈕 botton 縮寫 */
     
-    /* --------------GLOBAL-------------- */
-    .full-width {
-        width: 100%;
-    }
     /* 最外框 */
     .fixed-width {
         width: 600px;
@@ -90,6 +101,7 @@
     }
     nav .menu {
         float: left;
+        display: block;
     }
     nav li {
         float: left;
@@ -104,7 +116,9 @@
     nav .search {
         display: inline; /*為了蓋過手機板*/
     }
-  
+    nav .toggler {
+        display: none;
+    }
     /* HEADER */
     header {
         height: 800px;

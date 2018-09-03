@@ -1,8 +1,0 @@
-●homework 1 
-上寬1200px
-下區塊寬度如果不要那麼寬
-可以在ID 上面 更改col-X 的寬度
-#gallery .col-X{
-  float: none;
-  margin:auto;
-------------------

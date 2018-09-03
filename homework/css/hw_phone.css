@@ -21,11 +21,13 @@
     
     } */
     /* gotop */
-    #gotop {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        opacity: 0;
+    @media screen and (max-width:599px) {
+        #gotop {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none!important;
+        }
     }
     /* #gotop a {
         color: rgba(197, 167, 110, 0.3);
@@ -39,6 +41,53 @@
         background-color: rgba(197, 167, 110, 0.3);
         line-height: 50px;
         /* overflow: hidden; */
+    }
+    nav .toggler {
+        float: right;
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    nav .toggler span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    nav .toggler span::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        margin: auto;
+        top: 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    nav .toggler span::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        margin: auto;
+        top: -20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    nav .menu {
+        display: none;
     }
     nav li {
         border-bottom: 1px solid #000;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兩個框對齊</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .color-box {
+    display: inline-block;
+    border: 3px solid rgb(0, 0, 0);
+    width: 300px;
+    height: 300px;
+    position:relative;
+    }
+    .color-box-p {
+    display: inline-block;
+    background-color: rgb(203, 149, 149);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="color-box"><div class="color-box-p"></div></div>
+    <div class="color-box"><div class="color-box-p"></div></div>
+    <div class="color-box"><div class="color-box-p"></div></div>
+</body>
+</html>

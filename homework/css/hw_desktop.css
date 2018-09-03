@@ -63,13 +63,12 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
-    opacity: 1;
 }
 #gotop a {
-    color: rgba(197, 167, 110, 0.8);
+    color:  rgb(150, 120, 65);
 }
 #gotop a:hover {
-    color:rgba(197, 167, 110, 0.4);
+    color: rgb(147, 99, 11);
 }
 /* nav */
 nav {
@@ -77,6 +76,12 @@ nav {
     background-color: rgba(197, 167, 110, 0.3);
     line-height: 60px;
     overflow: hidden;
+}
+nav .menu {
+    display: block;
+}
+nav .toggler {
+    display: none;
 }
 nav li {
     border: none;

@@ -13,12 +13,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script language="javascript">
-            $(function(){
+        $(document).ready(function(){
+            $(".toggler").click(function(){
+                $(".menu").slideToggle();
+            });
+            $(window).resize(function(){
+                let w = $(this).width();
+                if (w > 600){
+                    $(".toggler").hide();
+                    $(".menu").show();
+                } else {
+                    $(".toggler").show();
+                    $(".menu").hide();
+                }
+            });
+            $("#gotop").hide();
+            $(window).scroll(function(){
+                let h = $("html,body").scrollTop();
+                if (h > 900){
+                    $("#gotop").fadeIn();
+                } else {
+                    $("#gotop").fadeOut();
+                }
+            });
+
             $("#gotop").click(function(){
             $("html,body").animate({scrollTop:0},900);
             return false;
             });
-            });
+        });
     </script>
 </head>
 <body>
@@ -28,11 +51,12 @@
     </div>
     <!-- nav -->
     <nav class="full-width">
+        <div class="toggler"><span></span></div>
         <div class="fixed-width clearfix">
-        <div class="menu">
             <div class="col-2">
                 <div class="logo">- LOGO -</div>
             </div>
+        <div class="menu">
             <div class="col-7 col-pd0">
                 <ul>
                     <li><a href="#"><span>關於</span>ABOUT</a></li>
