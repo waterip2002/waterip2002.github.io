@@ -7,11 +7,26 @@
     <title>LAN CLOTHES</title>
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="JS/common.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <script>
+    $(document).ready(function(){
+        $("#goTop").click(function(){
+        $("html,body").animate({scrollTop:0},900);
+        return false;
+        });
+        $("#goTop").hide();  //一開始要藏起來
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();  //卷軸與上方的距離
+            if(h > 1000){
+                $("#goTop").fadeIn();     //淡入
+            }else{
+                $("#goTop").fadeOut();   //淡出
+            }
+        });
+    });
+    </script>
 </head>
 <body>
     <!-- goTop -->
@@ -34,10 +49,10 @@
                 <ul>
                     <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
                     <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
-                    <li><a href="#"><span>形象合集</span>LOOKBOOK</a></li>
+                    <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
                     <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
                     <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
-                    <li><a href="#"><span>新品</span>NEW</a></li>
+                    <li><a href="women.html"><span>新品</span>NEW</a></li>
                 </ul>
             </div>
         </div>

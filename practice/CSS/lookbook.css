@@ -1,0 +1,123 @@
+[class*="col"] {
+    padding: 15px;;
+}
+#goTop {
+    color: rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.2em;
+    transition: all .3s;
+    cursor: pointer;
+}
+#goTop:hover {
+    color: rgb(150, 149, 149);
+}
+#intro .lk_title {
+    font-size: 6em;
+    position: fixed;
+    top: 300px;
+    left: 800px;
+    color: rgb(255, 255, 255);
+}
+#intro .lk_year {
+   font-size: 2em;
+   position: fixed;
+   top: 420px;
+   left: 1000px;
+   color: rgba(255, 255, 255, 0.454);
+}
+/* second NAV */
+#second .container {
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#second .nav {
+    width: 1600px;
+    padding-left: 40px;
+}
+#second .logo {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 90px;
+}
+#second #lk-nav {
+    line-height: 65px;
+    height: 65px;
+}
+#second span {
+    display: block;
+    margin-top: -65px;
+    text-align: center;
+}
+#second a:hover span {
+    margin-top: 0;
+}
+#second li {
+    float: right;
+    padding-right: 40px;
+    line-height: 65px;
+    height: 65px;
+}
+#second a {
+    color: rgb(0, 0, 0);
+}
+#second a:hover {
+    color: #333;
+}
+#second .lk_product {
+    margin: auto;
+    padding-top: 150px;
+    width: 1000px;
+}
+#second .lk_product h3{
+    margin: auto;
+    width: 200px;
+    font-size: 4em;
+    padding: 100px 0;
+}
+#second img {
+    padding: 40px 0;
+}
+#third .third_container .lk_info {
+    display: block;
+    width: 300px;
+    height: 30px;
+    font-size: 1.5em;
+    padding-top: 400px;
+    padding-left: 150px;
+    color: #fff;
+}
+#third .third_container .lk_content {
+    padding-left: 150px;
+    padding-top: 80px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+#third .third_container .lk_content ul {
+    display: block;
+    border-left: 1px #fff solid;
+    padding-top: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+#third .third_container a {
+    color: #fff;
+}
+#third .third_container a:hover {
+    color: #222;
+}
+#third .third_container p {
+    padding-top: 100px;
+    color: #333;
+    font-size: 12px;
+}

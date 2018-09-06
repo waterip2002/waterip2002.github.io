@@ -22,9 +22,7 @@
              big.attr("src",target);
              console.log(target);
         });
-    });
         // 點文字展開收合
-    $(document).ready(function(){
         $(".w-a02-1").hide();
         $(".w-a02").click(function(){
             $(this).next().slideToggle(400);
@@ -33,6 +31,7 @@
             $(this).next().slideToggle(400);
         });
     });
+   
     </script>
 </head>
 <body>
@@ -51,10 +50,10 @@
                     <ul>
                         <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
                         <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
-                        <li><a href="#"><span>形象合集</span>LOOKBOOK</a></li>
+                        <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
                         <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
                         <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
-                        <li><a href="#"><span>新品</span>NEW</a></li>
+                        <li><a href="women.html"><span>新品</span>NEW</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +66,7 @@
                         <div class="top_logo"><img src="images/queen.png" alt="queen_icon"></div>
                     </div>
                     <div class="col-10 bor-b">
-                        <a href="index.html"> 首頁 </a> > <a href="women.html">WOMEN</a> > <a href="#">SHORT SLEEVE</a>
+                        <a href="index.html"> 首頁 </a> > <a href="women.html">WOMEN</a> > <a href="women_top1.html">SHORT SLEEVE</a>
                             <div class="w-icon">
                                     <a href="#" title="上一頁">◀︎ PREVIOUS</a> 
                                     <a href="#" title="下一頁">NEXT ▶︎</i></a>
@@ -122,7 +121,49 @@
                             </div>
                         <div class="col-12">
                             <div class="w-size">尺寸 / Ｓ. Ｍ. Ｌ. XL</div>
-                            <a href="#"><div class="size-chart">SIZE CHART 尺寸說明</div></a>
+                            <a data-fancybox data-src="#hidden-content" href="javascript:;">
+                                <div class="size-chart">SIZE CHART 尺寸說明</div></a>
+                            <div id="hidden-content">
+                                <h3>SIZE CHART 尺寸說明</h3>
+                                <table>
+                                    <tr>
+                                        <th>尺碼 （單位：公分）</th>
+                                        <th>衣長</th>
+                                        <th>胸圍</th>
+                                        <th>下擺</th>
+                                        <th>袖長</th>
+                                    </tr>
+                                    <tr>
+                                        <td>S</td>
+                                        <td>30</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>30</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>L</td>
+                                        <td>30</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XL</td>
+                                        <td>30</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                </table>
+                                <p>尺寸皆為衣服平量尺寸</p>
+                                </div>
                             <div class="w-0">顏色 /</div>
                             <div class="w-0-white"></div>
                             <div class="w-0-pink"></div>
