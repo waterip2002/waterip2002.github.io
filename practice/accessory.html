@@ -13,14 +13,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
-    <script language="javascript">
-            $(function(){
-            $("#goTop").click(function(){
+    <script>
+    $(document).ready(function(){
+        $("#goTop").hide();
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();
+            if (h > 1000){
+                $("#goTop").fadeIn();
+            }else{
+                $("#goTop").fadeOut();
+            }
+        });
+        $("#goTop").click(function(){
             $("html,body").animate({scrollTop:0},900);
             return false;
-            });
-            });
-            </script>
+        });
+    </script>
 </head>
 <body>
     <!-- goTop -->
@@ -45,7 +53,7 @@
                         <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
                         <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
                         <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
-                        <li><a href="#"><span>新品</span>NEW</a></li>
+                        <li><a href="new.html"><span>新品</span>NEW</a></li>
                     </ul>
                 </div>
             </div>

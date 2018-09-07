@@ -7,7 +7,8 @@
     <title>上課的資料</title>
     <style>
     body {
-        background-color: rgb(155, 135, 135);
+        background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.575),rgba(89, 89, 89, 0.468)),
+        url(bgc.jpg);
         color: rgb(0, 0, 0);
         text-align: center;
         font-family:Arial, Helvetica, sans-serif,"微軟正黑體";
@@ -19,21 +20,32 @@
         border: 1px #fff solid;
         display: inline-block;
         margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.4);
     }
     h2 {
-        color: rgb(247, 245, 238);
+        color: rgb(203, 255, 119);
         letter-spacing: 1.2em;
         margin-top: 60px;
     }
     a {
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         text-decoration: none;
     }
+    a:hover::before {
+        content: "-";
+        display: inline-block;
+        padding-right: 10px;
+    }
+    a:hover::after {
+        content: "-";
+        display: inline-block;
+        padding-left: 10px;
+    }
     a:hover {
-        color: rgb(71, 71, 71);
+        color: rgb(158, 245, 43);
     }
     p {
-        color: rgb(235, 222, 222);
+        color: rgb(0, 0, 0);
     }
     .box {
         color: rgb(116, 107, 107);
@@ -72,12 +84,12 @@
     <p>手寫，有RWD的部分</p>
     <a href="homework2/index.html" target="_blank">HOMEWORK 2</a>
     <p>手寫，有錨點連結，有RWD的部分</p>
-    <a href="homework_bt/index.html" target="_blank">HOMEWORK 3</a>
+    <a href="homework_bt/index.html" target="_blank">BOOKSTRAP</a>
     <p>使用Bootstrap，有RWD的部分（Bootstrap自動完成RWD）</p>
-    <a href="practice/index.html" target="_blank">HOMEWORK 4</a>
-    <p>手寫，有做women 分頁，但沒有RWD的部分</p>
+    <a href="practice/index.html" target="_blank">PRACTICE</a>
+    <p>手寫，有做分頁，但沒有RWD的部分</p>
     <div class="box">
-    --- Web by MEI LIN 2018 8---
+    --- Web by MEI LIN 2018 9---
     </div>
 </div>
 </body>

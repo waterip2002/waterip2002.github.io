@@ -32,10 +32,27 @@
         $(".w-a01").click(function(){
             $(this).next().slideToggle(400);
         });
+        // gotop
+        $("#goTop").hide();
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();
+            if (h > 1000){
+                $("#goTop").fadeIn();
+            }else{
+                $("#goTop").fadeOut();
+            }
+        });
+        $("#goTop").click(function(){
+            $("html,body").animate({scrollTop:0},900);
+            return false;
+        });
     });
     </script>
 </head>
 <body>
+        <div id="goTop">
+                <a href="#"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+        </div>
         <!-- NAV -->
         <nav class="full-width">
             <div class="fixed-width">
@@ -54,7 +71,7 @@
                         <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
                         <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
                         <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
-                        <li><a href="women.html"><span>新品</span>NEW</a></li>
+                        <li><a href="new.html"><span>新品</span>NEW</a></li>
                     </ul>
                 </div>
             </div>

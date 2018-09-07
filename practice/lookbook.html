@@ -31,9 +31,9 @@
             let h = $("body,html").scrollTop();  //卷軸與上方的距離
             console.log(h)
             if (h > 600) {
-                $(".content").slideUp();
+                $(".content").hide(600);
             }else{
-                $(".content").slideDown();
+                $(".content").show(600);
             }
             if(h > 1000){
                 $("#goTop").fadeIn();     //淡入
@@ -98,7 +98,7 @@
                     <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
                     <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
                     <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
-                    <li><a href="women.html"><span>新品</span>NEW</a></li>
+                    <li><a href="new.html"><span>新品</span>NEW</a></li>
                 </ul>
                 </div>
             </div>
