@@ -11,14 +11,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
-    <script language="javascript">
-            $(function(){
+    <script>
+        $(document).ready(function(){
             $("#goTop").click(function(){
             $("html,body").animate({scrollTop:0},900);
             return false;
             });
+            $("#goTop").hide();  //一開始要藏起來
+            $(window).scroll(function(){
+                let h = $("body,html").scrollTop();  //卷軸與上方的距離
+                if(h > 1000){
+                    $("#goTop").fadeIn();     //淡入
+                }else{
+                    $("#goTop").fadeOut();   //淡出
+                }
             });
-            </script>
+        });
+    </script>
 </head>
 <body>
     <!-- goTop -->
