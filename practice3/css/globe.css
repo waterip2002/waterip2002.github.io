@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif,"微軟正黑體";
+    letter-spacing: 1px;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+.full-width {
+    width: 100%;
+}
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+[class*="col"] {
+    float: left;
+}
+.btn {
+    border: 3px #fff solid;
+    display: inline-block;
+    padding: 15px 45px;
+    margin-top: 20px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+.btn2 {
+    border: 3px #666 solid;
+    display: inline-block;
+    padding: 15px 100px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    transition: all .3s ease-in-out;
+    color: #666;
+}
+.btn2:hover {
+    background-color: #666;
+    color:#fff;
+}
+h1 {
+    font-size: 3em;
+    padding: 15px 0;
+}
+h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+}

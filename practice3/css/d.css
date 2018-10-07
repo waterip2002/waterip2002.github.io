@@ -1,0 +1,234 @@
+/* NAV */
+nav {
+    background-color: rgba(0, 0, 0, 0.714);
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: rgba(255, 255, 255, 0.632) 2px solid;
+}
+nav h1 {
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: #fff;
+}
+nav .menu {
+    width: 600px;
+    margin: auto;
+}
+nav a {
+    position: relative;
+    float: left;
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    line-height: 35px;
+    color: rgb(162, 156, 156);
+    z-index: 1;
+}
+nav a::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 35px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.632);
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity .5s, color 1s,transform .5s;
+    z-index: -1;
+    
+}
+nav a:hover::before,nav a:focus::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+nav a:hover,nav a:focus {
+    color: rgb(19, 19, 19);
+}
+/* HEADER */
+header {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.header-word {
+    position: absolute;
+    z-index: 998;
+    color: #fff;
+    top: 60%;
+    left: 8%;
+}
+/* Automotive */
+.design .col-6 {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+.design .col-6 img {
+    transition: all 4s ease-out;
+}
+.design .col-6:nth-of-type(1) {
+    border-right: 1px #fff solid;
+}
+.design .col-6:nth-of-type(2) {
+    border-left: 1px #fff solid;
+}
+.design .col-6:hover img {
+    transform: scale(1.2);
+    opacity: .6;
+}
+.design .design-word {
+    position: absolute;
+    color: #fff;
+    top: 70%;
+    left: 8%;
+    z-index: 997;
+}
+/* country */
+.country {
+    text-align: center;
+    padding: 80px 0;
+}
+.country h4 {
+    font-size: 2em;
+    font-weight: 300;
+}
+.country h3 {
+    font-size: 5em;
+    padding: 5px 0;
+}
+.country a {
+    color: #000;
+    font-size: 2em;
+}
+.country a::before {
+    content: ">";
+    display: inline-block;
+    padding-right: 8px;
+    font-weight: 700;
+    font-size: 1.2em;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all .9s;
+}
+.country a:hover::before {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* pictures */
+.pictures {
+    background-color: #000;
+    border-bottom: #fff 2px solid;
+}
+.pictures .col-8 {
+    position: relative;
+    overflow: hidden;
+}
+.pictures .col-8::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+.pictures .pic-word {
+    position: absolute;
+    color: #fff;
+    top: 90%;
+    left: 5%;
+    z-index: 999;
+}
+.pictures .col-12 {
+    position: relative;
+    overflow: hidden;
+}
+.pictures .col-4 .col-12:nth-of-type(1)::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+.pictures .pic-word1 {
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 5%;
+    z-index: 999;
+}
+.pictures h5 {
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+.pictures p {
+    font-size: 1.2em;
+}
+.pictures img {
+    transition: all 4s ease-out;
+}
+.pictures img:hover {
+    transform: scale(1.2);
+    opacity: .6;
+}
+/* picture2 */
+.pictures2 {
+    background-color: #000;
+}
+.pictures2 .col-12 {
+    border-bottom: #fff 2px solid;
+}
+.pictures2 .col-4,.pictures2 .col-8 {
+    position: relative;
+    overflow: hidden;
+}
+.pictures2 .pic2-word {
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 5%;
+    z-index: 999;
+}
+.pictures2 h5 {
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+.pictures2 p {
+    font-size: 1.2em;
+}
+.pictures2 img {
+    transition: all 4s ease-out;
+}
+.pictures2 img:hover {
+    transform: scale(1.2);
+    opacity: .6;
+}
+.pictures2 .col-4:nth-of-type(1)::after,.pictures2 .col-4:nth-of-type(2)::after,.pictures2 .col-4:nth-of-type(4)::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+}
+/* social */
+.social {
+    text-align: center;
+}
+.social .title{
+    font-size: 5em;
+    padding: 5px 0;
+    font-weight: 700;
+}
+.social .title2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
