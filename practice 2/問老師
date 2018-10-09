@@ -1,0 +1,33 @@
+body {
+        padding:0; 
+        margin:0;
+    }
+    #intro {
+        background:url(images_lk/lk01.jpg) 50% 0 no-repeat fixed;
+        height: 1000px;
+        margin: 0 auto;
+    }
+    .lk-content {
+        font-size: 4em;
+        position: fixed;
+        top: 200px;
+        left: 800px;
+        color: #fff;
+    }
+    .lk-content_year {
+        font-size: 2em;
+        position: fixed;
+        top: 280px;
+        left: 900px;
+        color: rgba(255, 255, 255, 0.632);
+    }
+    #second {
+        background-color: rgb(254, 252, 252);
+        opacity: .8;
+        /* background: url(images/2.jpg) 50% 0 no-repeat fixed; */
+        color: white;
+        height: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0;
+    }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lookbook</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/lookbook.css">
+    <script>
+    $(document).ready(function(){
+        $(function(){
+            $("#intro").parallax("50%", 0.2);
+            $("#second").parallax("50%", 0.4);
+            $("#third").parallax("50%", 0.1);
+            return false;
+        });
+        $("#goTop").click(function(){
+        $("html,body").animate({scrollTop:0},900);
+        return false;
+        });
+
+        $("#goTop").hide();
+        $(".container").hide();
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();  //卷軸與上方的距離
+            console.log(h)
+            if (h > 600) {
+                $(".content").hide(600);
+            }else{
+                $(".content").show(600);
+            }
+            if(h > 1000){
+                $("#goTop").fadeIn();     //淡入
+            }else{
+                $("#goTop").fadeOut();   //淡出
+            }
+            if (h > 1200) {
+                $(".container").fadeIn();
+            }else{
+                $(".container").fadeOut();
+            }
+            return false;
+        });
+    });
+    </script>
+    <style>
+        body {
+            padding:0; 
+            margin:0;
+        }
+        #intro{
+            background:url(images_lk/lk_bg.jpg) 50% 0 no-repeat fixed;
+            height: 1200px;
+            margin: 0 auto;
+        }
+        #second{
+            background-color: rgb(255, 255, 255);
+            /* height: ; */
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0;
+            z-index: 9999;
+        }
+        #third {
+            background:linear-gradient(90deg,rgba(83, 46, 33, 0.3),rgba(0, 0, 0, 0.345)),
+            url(images_lk/lk_bg2.jpg) 50% 0 no-repeat fixed;
+            height: 1000px;
+            margin: 0 auto;
+        }
+        </style>
+</head>
+<body>
+    <div id="goTop">Top</div>
+    <!-- intro -->
+    <div id="intro">
+        <div class="content">
+            <div class="lk_title">LOOKBOOK</div>
+            <div class="lk_year">2019 SPRING SUMMER</div>
+        </div>
+    </div>
+    <!-- second -->
+    <div id="second">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html">
+                    <div class="logo">LAN CLOTHES</div>
+                </a>
+                <div class="lk_nav">
+                <ul>
+                    <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
+                    <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
+                    <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
+                    <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
+                    <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
+                    <li><a href="new.html"><span>新品</span>NEW</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lk_product">
+            <h3>ENJOY MY LIFE / </h3>
+            <img src="images_lk/n1.jpg" alt="">
+            <img src="images_lk/n2.jpg" alt="">
+            <img src="images_lk/n3.jpg" alt="">
+            <img src="images_lk/n2.jpg" alt="">
+            <img src="images_lk/n1.jpg" alt="">
+            <img src="images_lk/n3.jpg" alt="">
+        </div>
+    </div>
+    <!-- third -->
+    <div id="third">
+        <div class="third_container">
+            <div class="lk_info">INFORMATION /</div>
+            <div class="lk_content">
+                <ul>
+                    <li>客服信箱 service@yahoo.com.tw</li>
+                    <li>客服電話 04 8765-4321</li>
+                    <li>週一至週五 9:00 ~ 18:00</li>
+                </ul>
+                <ul>
+                        <li><a href="about.html" title="關於">LAN CLOTHES</a></li>
+                        <li><a href="#" title="如何購買">HOW TO BUY</a></li>
+                        <li><a href="#" title="最新消息">NEWS</a></li>
+                        <li><a href="#" title="反詐騙165">165ANTI-FRAUD</a></li>
+                        <li><a href="#" target="_blank" title="臉書專頁">FACEBOOK</a></li>
+                    </ul>
+                <p>COPYRIGHT &copy; 2018 LAN CLOTHES CO.LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

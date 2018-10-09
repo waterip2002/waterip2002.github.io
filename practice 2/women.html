@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAN CLOTHES</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/women.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#goTop").click(function(){
+            $("html,body").animate({scrollTop:0},900);
+            return false;
+            });
+            $("#goTop").hide();  //一開始要藏起來
+            $(window).scroll(function(){
+                let h = $("body,html").scrollTop();  //卷軸與上方的距離
+                if(h > 1000){
+                    $("#goTop").fadeIn();     //淡入
+                }else{
+                    $("#goTop").fadeOut();   //淡出
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- goTop -->
+    <div id="goTop">
+            <a href="#"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+        <!-- NAV -->
+        <nav class="full-width">
+            <div class="fixed-width">
+                <div class="logo">
+                        <a href="index.html"><h2>LAN CLOTHES</h2></a>
+                    </div>
+                <div class="search">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>  
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
+                        <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
+                        <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
+                        <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
+                        <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
+                        <li><a href="new.html"><span>新品</span>NEW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ITEMS -->
+        <div id="items" class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-12">
+                    <div class="col-2">
+                        <div class="top_logo"><img src="images/queen.png" alt="queen_icon"></div>
+                    </div>
+                    <div class="col-10 bor-b">
+                        <a href="index.html"> 首頁 </a> > <a href="women.html"> WOMEN</a>
+                    </div>
+                   
+                </div>
+                <div class="col-2">
+                    <h4>女裝上身 TOP /</h4>
+                    <ul>
+                       <li><a href="#">
+                         <span class="en">NEW ARRIVAL</span>
+                         <span class="ch">新品上市</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">SHORT SLEEVE</span>
+                         <span class="ch">短袖</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">LONG SLEEVE</span>
+                         <span class="ch">長袖</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">POLO</span>
+                         <span class="ch">POLO衫</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">VAST</span>
+                         <span class="ch">背心</span>
+                       </a></li>
+                        <!-- 這樣寫看似可以，但是怪怪的!!! -->
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s05.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s03.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s04.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s03.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s04.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s05.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s03.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s05.jpg" alt="AAA">
+                    </div>
+                    <div class="col-4">
+                        <a href="women_top1.html" class="mask">
+                            <p>MIT 氣質簍空花朵襯衫</p>
+                            <p>S M L XL</p>
+                            <div class="price">NT. 1980</div>
+                        </a>
+                        <img src="images/s04.jpg" alt="AAA">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 頁腳 -->
+        <footer class="full-width clearfix">
+                <div class="col-6">
+                <p>COPYRIGHT &copy; 2018 LAN CLOTHES CO.LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-5">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-line fa-2x"></i></a>
+                </div>
+
+        </footer>
+</body>

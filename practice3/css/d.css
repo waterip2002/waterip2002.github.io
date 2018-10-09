@@ -1,6 +1,6 @@
 /* NAV */
 nav {
-    background-color: rgba(0, 0, 0, 0.714);
+    background-color: rgba(0, 0, 0);
     overflow: hidden;
     position: fixed;
     z-index: 9999;
@@ -221,6 +221,11 @@ header {
 /* social */
 .social {
     text-align: center;
+    margin-bottom: 150px;
+    margin-top: 30px;
+}
+.social .col-4 {
+    padding-right: 10px;
 }
 .social .title{
     font-size: 5em;
@@ -230,5 +235,55 @@ header {
 .social .title2 {
     font-size: 2em;
     font-weight: 300;
+    margin-bottom: 100px;
+}
+/* footer */
+footer {
+    background-color: #222;
+    padding: 150px 0;
+}
+footer .col-12 {
     margin-bottom: 50px;
+    color: rgba(216, 216, 216, 0.646);
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+footer .col-3 {
+    padding: 10px 0;
+}
+footer h6 {
+    color: rgba(255, 255, 255, 0.831);
+    font-size: .9em;
+}
+footer h6::after {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background-color: #444;
+    margin: 15px 0;
+}
+footer li {
+    padding: 6px 0;
+}
+footer a {
+    color: #888;
+    font-weight: 100;
+    font-size: .9em;
+}
+footer a:hover {
+    color: #fff;
+}
+footer .copyright {
+    color: rgb(252, 252, 252);
+    margin-top: 80px;
+    font-weight: 100;
+    font-size: .7em;
+}
+footer .copyright a {
+    color: rgb(167, 100, 100);
+    letter-spacing: 2px;
+}
+footer .copyright a:hover {
+    color:rgb(235, 102, 102);
 }

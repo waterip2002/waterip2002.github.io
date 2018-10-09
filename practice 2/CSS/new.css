@@ -1,0 +1,126 @@
+/* gotop */
+#goTop {
+    color: rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1em;
+    transition: all .3s;
+    cursor: pointer;
+}
+#goTop:hover {
+    color: rgb(150, 149, 149);
+}
+/* header */
+header {
+    height: 300px;
+    z-index: 9999;
+    position: fixed;
+}
+header img {
+    width: 600px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+header .new_content {
+    padding-top: 80px;
+    position: fixed;
+}
+header .btn {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(169, 169, 169);
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+header ul {
+    margin-top: 20px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+header li a{
+    color: #666;
+}
+header li a:hover {
+    color: rgb(190, 190, 190);
+}
+/* news */
+#news {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 200px 0;
+}
+#news h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.slider {
+    width: 1000px;
+    margin: auto;
+}
+#news a {
+    display: block;
+    color: #333;
+    padding-top: 20px;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+#news a:hover {
+    color: #999;
+}
+#news .border {
+    width: 100%;
+    border-bottom: 5px solid #000;
+    margin-top: 80px;
+}
+#news .border2 {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+#news h3 {
+    padding: 20px 0;
+}
+#news p {
+    display: block;
+    color: #777;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+#news .new-icon {
+    margin-top: 100px;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+#news .new-icon a {
+    letter-spacing: 2px;
+    font-size: 12px;
+    display: inline-block!important;
+    width: 120px;
+    
+    
+}
+/* footer */
+footer .border {
+    width: 100%;
+    border-bottom: 20px solid #000;
+    float: left;
+}
+footer .logo {
+    display: inline-block;
+    float: right;
+    padding-right: 200px;
+    font-size: 3em;
+    line-height: 40px;
+}

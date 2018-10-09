@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAN CLOTHES</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/accessory.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#goTop").hide();
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();
+            if (h > 1000){
+                $("#goTop").fadeIn();
+            }else{
+                $("#goTop").fadeOut();
+            }
+        });
+        $("#goTop").click(function(){
+            $("html,body").animate({scrollTop:0},900);
+            return false;
+        });
+    </script>
+</head>
+<body>
+    <!-- goTop -->
+    <div id="goTop">
+            <a href="#"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+        <!-- NAV -->
+        <nav class="full-width">
+            <div class="fixed-width">
+                <div class="logo">
+                        <a href="index.html"><h2>LAN CLOTHES</h2></a>
+                    </div>
+                <div class="search">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>  
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
+                        <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
+                        <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
+                        <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
+                        <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
+                        <li><a href="new.html"><span>新品</span>NEW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ITEMS -->
+        <div id="items" class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-12">
+                    <div class="col-2">
+                        <div class="top_logo"><img src="images/queen.png" alt="queen_icon"></div>
+                    </div>
+                    <div class="col-10 bor-b">
+                        <a href="index.html"> 首頁 </a> > <a href="accessory.html">ACCESSORY</a>
+                    </div>
+                   
+                </div>
+                <div class="col-2">
+                    <h4>配件 ACCESSORY /</h4>
+                    <ul>
+                       <li><a href="#">
+                         <span class="en">WALLETS</span>
+                         <span class="ch">長/短皮夾</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">BAGS</span>
+                         <span class="ch">包款</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">WATCHES</span>
+                         <span class="ch">手錶</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">HATS</span>
+                         <span class="ch">帽子</span>
+                       </a></li>
+                       <li><a href="#">
+                         <span class="en">SILKS</span>
+                         <span class="ch">絲巾</span>
+                       </a></li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>米色編織紳士帽</p>
+                            <div class="price">NT. 1290</div>
+                        </a>
+                        <img src="images_ac/ac01.jpg" alt="ac01.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>寬緞帶編織紳士帽</p>
+                            <div class="price">NT. 1000</div>
+                        </a>
+                        <img src="images_ac/ac02.jpg" alt="ac02.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>鄉村風花朵編織帽</p>
+                            <div class="price">NT. 1490</div>
+                        </a>
+                        <img src="images_ac/ac03.jpg" alt="ac03.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>米色編織紳士帽</p>
+                            <div class="price">NT. 1290</div>
+                        </a>
+                        <img src="images_ac/ac02.jpg" alt="ac01.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>寬緞帶編織紳士帽</p>
+                            <div class="price">NT. 1000</div>
+                        </a>
+                        <img src="images_ac/ac03.jpg" alt="ac02.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>鄉村風花朵編織帽</p>
+                            <div class="price">NT. 1490</div>
+                        </a>
+                        <img src="images_ac/ac01.jpg" alt="ac03.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>米色編織紳士帽</p>
+                            <div class="price">NT. 1290</div>
+                        </a>
+                        <img src="images_ac/ac01.jpg" alt="ac01.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>寬緞帶編織紳士帽</p>
+                            <div class="price">NT. 1000</div>
+                        </a>
+                        <img src="images_ac/ac02.jpg" alt="ac02.jpg">
+                    </div>
+                    <div class="col-4">
+                        <a href="accessory_hats.html" class="mask">
+                            <p>鄉村風花朵編織帽</p>
+                            <div class="price">NT. 1490</div>
+                        </a>
+                        <img src="images_ac/ac03.jpg" alt="ac03.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- 頁腳 -->
+        <footer class="full-width clearfix">
+                <div class="col-6">
+                <p>COPYRIGHT &copy; 2018 LAN CLOTHES CO.LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-5">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-line fa-2x"></i></a>
+                </div>
+
+        </footer>
+</body>

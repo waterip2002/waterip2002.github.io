@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAN CLOTHES</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#goTop").click(function(){
+        $("html,body").animate({scrollTop:0},900);
+        return false;
+        });
+        $("#goTop").hide();  //一開始要藏起來
+        $(window).scroll(function(){
+            let h = $("body,html").scrollTop();  //卷軸與上方的距離
+            if(h > 1000){
+                $("#goTop").fadeIn();     //淡入
+            }else{
+                $("#goTop").fadeOut();   //淡出
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <!-- goTop -->
+    <div id="goTop">
+        <a href="#"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+    </div>
+    <!-- NAV -->
+    <nav class="full-width">
+        <div class="fixed-width">
+            <div class="logo">
+                <a href="index.html"><h2>LAN CLOTHES</h2></a>
+                
+            </div>
+            <div class="search">
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>  
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html"><span>關於我們</span>ABOUT</a></li>
+                    <li><a href="#"><span>如何購買</span>HOW TO BUY</a></li>
+                    <li><a href="lookbook.html"><span>形象合集</span>LOOKBOOK</a></li>
+                    <li><a href="accessory.html"><span>配件</span>ACCESSORY</a></li>
+                    <li><a href="women.html"><span>女裝</span>WOMEN</a></li>
+                    <li><a href="new.html"><span>新品</span>NEW</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER  -->
+    <header class="full-width">
+        <div class="fixed-width">
+            <h1>LAN CLOTHES DESIGN</h1>
+            <div class="line"></div>
+            <h3>2019 SPRING / SUMMER</h3>
+        </div>
+    </header>
+     <!-- NEW -->
+     <div id="new" class="full-width">
+         <div class="fixed-width clearfix">
+             <div class="col-12">
+                    <h2>NEW ARRIVEL /</h2>
+                 <div class="col-4">
+                     <div class="images">
+                     <a href="#" class="mask">民族風復古紋路手拿包 NT.1280</a>
+                     <img src="images/n1.jpg" alt="手拿包">
+                     </div>
+                     <h4>Date: 2018-08-01</h4>
+                     <h3>ACCESSORY</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis earum officia nisi natus incidunt placeat saepe asperiores quidem cumque.</p>
+                     <a href="#" class="btn">MORE</a>
+                 </div>
+                 <div class="col-4">
+                     <div class="images">
+                     <a href="#" class="mask">小牛皮黑白簡約風牛津鞋 NT.3380</a>
+                     </div>
+                     <img src="images/n2.jpg"  alt="鞋子">
+                     <h4>Date: 2018-08-02</h4>
+                     <h3>SHOES</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis earum officia nisi natus incidunt placeat saepe asperiores quidem cumque.</p>
+                     <a href="#" class="btn">MORE</a>
+                 </div>
+                 <div class="col-4">
+                     <div class="images">
+                     <a href="#" class="mask">喀什米爾羊毛粗針大格紋圍巾 NT.1280</a>
+                    </div>
+                     <img src="images/n3.jpg"  alt="圍巾">
+                     <h4>Date: 2018-08-01</h4>
+                     <h3>SCARF</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis earum officia nisi natus incidunt placeat saepe asperiores quidem cumque.</p>
+                     <a href="#" class="btn">MORE</a>
+                 </div>
+            </div>
+         </div>
+     </div>
+     <!-- 展示 -->
+     <div id="show" class="full-width ">
+        <div class="fulled-width bgc-show">
+                <h3>NEW ITEMS /</h3>
+            <div class="fixed-width  clearfix">
+                <div class="col-3">
+                    <a href="#" class="mask">玫瑰花朵牛仔外套 NT.4800</a>
+                    <img src="images/s1.jpg" alt="model">
+                </div>
+                <div class="col-3">
+                    <a href="#" class="mask">細絨布金屬背帶側背包 NT.3280</a>
+                    <img src="images/s5.jpg" alt="model">
+                </div>
+                <div class="col-3">
+                    <a href="#" class="mask">民族風復古紳士帽 NT.990</a>
+                    <img src="images/s6.jpg" alt="model">
+                </div>
+                <div class="col-3">
+                    <a href="#" class="mask">仿牛仔布純色彈性合身褲 NT.950</a>
+                    <img src="images/s4.jpg" alt="model">
+                </div>
+            </div>
+            <a href="#" class="btn">MORE</a>
+        </div>
+        <div class="fixed-width clearfix">
+             <h3>LIFE STYLE /</h3>
+                <div class="col-4">
+                    <img src="images/s03.jpg" alt="model">
+                </div>
+                <div class="col-4">
+                    <img src="images/s04.jpg" alt="model">
+                </div>
+                <div class="col-4">
+                    <img src="images/s05.jpg" alt="model">
+                </div>
+        </div>
+        <div class="fixed-width show-line clearfix">
+                <div class="col-6">
+                    <img src="images/s01.jpg" alt="model">
+                </div>
+                <div class="col-6">
+                    <img src="images/s02.jpg" alt="model">
+                </div>
+        </div>
+     </div>
+     <!-- 話語 -->
+     <div id="talk" class="full-width">
+         <div class="fixed-width">
+             <div class="col-12">
+                 <div class="box">
+                 <i class="far fa-heart fa-2x"></i>
+                 <i class="far fa-heart fa-2x"></i>
+                 <i class="far fa-heart fa-2x"></i>
+                 <p></p>
+                 <p>Don't try so hard, </p>
+                 <p>the best</p>
+                 <p>things </p>
+                 <p>come when</p>
+                 <p>you</p>
+                 <p>least expect them to.</p>
+                 <i class="far fa-smile fa-3x"></i>
+                </div>
+             </div>
+         </div>
+     </div>
+     <!-- 頁尾 -->
+     <footer class="full-width">
+         <div class="fixed-width clearfix">
+            <div class="col-12">
+                <div class="col-3">
+                    <div class="list_content">
+                     <ul>
+                         <li><a href="#" title="關於">LAN CLOTHES</a></li>
+                         <li><a href="#" title="如何購買">HOW TO BUY</a></li>
+                         <li><a href="#" title="最新消息">NEWS</a></li>
+                         <li><a href="#" title="反詐騙165">165ANTI-FRAUD</a></li>
+                         <li><a href="#" target="_blank" title="臉書專頁">FACEBOOK</a></li>
+                     </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2>SERVICE</h2>
+                    <ul>
+                        <li>客服信箱 service@yahoo.com.tw</li>
+                        <li>客服電話 04 8765-4321</li>
+                        <li>週一至週五 9:00 ~ 18:00</li>
+                    </ul>
+                </div> 
+                <div class="col-3">
+                    <img src="images/f01.jpg" alt="頁尾">
+                </div> 
+            </div>
+            <div class="col-12">
+                <p>COPYRIGHT &copy; 2018 LAN CLOTHES CO.LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+         </div>
+     </footer>
+</body>
+</html>
