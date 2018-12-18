@@ -424,7 +424,7 @@ header .godown i {
     top: 450px;
     right: -100px;
     width: 500px;
-    z-index: 1;
+    z-index: -1;
     animation: other_mei 2s ease-out;
 }
 
