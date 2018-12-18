@@ -1,0 +1,574 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif,"微軟正黑體";
+}
+/* ↓重置標籤 */
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 14px;
+    color: rgba(0, 5, 5, 0.7);
+    line-height: 1.8em;
+}
+img {
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    padding: 2px 20px;
+    background-color: rgb(184, 184, 184,0.7);
+    margin-top: 50px;
+    color: rgb(250, 249, 249); 
+}
+.btn:hover {
+    background-color:rgb(184, 184, 184,0.4);
+    color: rgb(105, 104, 104);
+}
+/* 清除float影響 */
+.clearfix::after {
+    content:"";
+    display: block;
+    clear:both;
+}
+/* --------------GLOBAL-------------- */
+.full-width {
+    width: 100%;
+}
+/* 最外框 */
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+/* 內固定寬框 */
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+/* 將內框分成12等分 */
+
+[class*="col"] {
+    float: left;
+    padding: 10px;
+}
+/* ↑選擇html裡面，頭一個字有"col"的字樣的類別更改其樣式 */
+/* 右下浮動top標籤 */
+#gotop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+}
+#gotop a {
+    color: rgb(0, 0, 0);
+    transition: all .3s ease-out;
+}
+#gotop a:hover  {
+    color: rgba(210, 210, 210, 0.8);
+}
+/* ↓選單 */ 
+nav {
+    height: 70px;
+    position: fixed;
+    overflow: hidden; 
+    text-align: center;
+    background-color: rgba(84, 84, 84, 0.8);
+    z-index: 9999;
+}
+nav .menu a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 70px;
+    padding-right: 40px;
+    font-size: 16px; 
+    cursor: pointer;
+}
+nav .menu a:hover {
+    color:  #d0cfcf;
+}
+nav .logo a {
+    float: right;
+    padding-left: 80px;
+    line-height: 70px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+nav .logo a:hover {
+    color: rgb(1, 0, 0);
+}
+nav img {
+    float: right;
+    width: 50px;
+    padding-left: 12px;
+    padding-top: 15px;
+}
+nav .menu {
+    float: right;
+}
+nav .menu li {
+    float: right;
+}
+nav a span {
+    display: block;  
+    margin-top: -70px; 
+}
+nav a:hover span {
+    margin-top: 0;
+}
+
+/* Header */
+header {
+    height: 1200px;
+    background:url(../images/bg01.jpg) 50% 0 no-repeat fixed;
+    /* background-size: cover; */
+}
+header h1 {
+    font-size: 3em;
+    color: rgb(254, 254, 254);
+    letter-spacing: .1em; 
+    position: fixed; 
+    right: 250px;
+    top: 350px;
+}
+header h3 {
+    position: fixed;
+    color: rgb(26, 24, 24);
+    right: 255px;
+    top: 410px;
+}
+header .godown {
+    position: relative;
+    display: block;
+    width: 37px;
+    height: 70px;
+    border: #333 1px solid;
+    position: fixed;
+    right: 450px;
+    top: 500px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header a {
+    color: #333;
+}
+header .godown i {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 11px;
+    transition: all .4s ease-in-out;
+    opacity: .3;
+
+    animation: godown 3.5s  ease-out infinite;
+}
+
+@keyframes godown {
+    from {
+        top: 15px;opacity: .2;}
+    40% {
+        top: 25px;opacity: 1;}
+    50% {
+        top: 30px;opacity: .5;}
+    to{
+        top: 50px;opacity: 0;}
+}
+/* me */
+#me {
+    padding: 120px 0;
+    height: 1100px;
+    background-image: url(../images/portfolio_bg.jpg);
+    margin: auto;
+}
+#me .fixed-width {
+    position: relative;
+}
+#me .meilogo {
+    width: 350px;
+    position: absolute;
+    opacity: 0;
+    top: 400px;
+    left: 700px;
+    animation: mei 1s cubic-bezier(.41,.96,.72,1.41) forwards;
+}
+#me .meiword1 {
+    width: 650px;
+    position: absolute;
+    opacity: 0;
+    top: 80px;
+    animation: mei 1s 1s ease-out forwards;
+    transform-origin: 700px 600px;
+}
+#me .meiword2 {
+    width: 350px;
+    position: absolute;
+    opacity: 0;
+    left: 700px;
+    top: 0;
+    animation: mei 1s 1.8s ease-out forwards;
+    /* forwards維持在最後一幀的動作 */
+    transform-origin: 200px 400px;
+}
+
+@keyframes mei {
+    from {transform: scale(.4);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+/* illustrator */
+#illus {
+    padding: 80px 0;
+    background-color: rgba(85, 85, 79, 0.762);
+}
+#illus .illus_title {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 1px #fff solid;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 250px;
+    padding-right: 50px;
+}
+#illus .col-3 {
+    padding-top: 50px;
+    position: relative;
+}
+#illus .col-3 .ill_mei {
+    position: absolute;
+    width: 250px;
+    left: 10px;
+    top: 350px;
+    animation: illus_mei 3s ease-out;
+}
+@keyframes illus_mei {
+    from {transform: translateY( 300px)}
+    to {transform: translateY( 0px)}
+}
+#illus h2 {
+    font-size: 2em;
+    color: #fff;
+}
+#illus h3 {
+    font-weight: 300;
+    font-size: 1.1em;
+    padding-top: 30px;
+    color:#fff;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+#illus h3::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: .4;
+    
+    animation: illus_after 3s ;
+}
+@keyframes illus_after {
+    from{
+        width: 20%;
+        opacity: 1;
+    }
+    to{
+        width: 100%;
+        opacity: .4;
+    }
+}
+#illus .col-9 .box:hover {
+    position: relative;
+    top: 5px;
+}
+/* webworks */
+#webworks {
+    background:url(../images/web_images/web_bg1.jpg) 50% 0 no-repeat fixed;
+    height: 1100px;
+    padding: 80px 0;
+}
+#webworks h2 {
+    font-size: 1.8em;
+    color: #000;
+}
+#webworks .col-6 {
+    padding: 20px;
+}
+#webworks .col-6 .web_images {
+    position: relative;
+}
+#webworks .col-6 .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    opacity: 0;
+    line-height: 210px;
+    font-size: 1em;
+    letter-spacing: 12px;
+    transition: all .6s ease-out;
+}
+#webworks .col-6 .mask .web_border {
+    position: absolute;
+    border: #fff solid 1px;
+    width: 85%;
+    height: 80%;
+    text-align: center;
+    top:0;bottom: 0;right: 0;left: 0;
+    margin: auto;
+    color: #fff;
+
+}
+#webworks .col-6 h4 {
+    font-size: 14px;
+}
+#webworks .col-6:hover .mask {
+    opacity: .8;
+}
+#webworks .col-3 {
+    padding-top: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+#webworks .web_title {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 1px #000 solid;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 250px;
+    padding-left: 50px;
+}
+#webworks .web_pc {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 150px;
+    opacity: 0;
+    animation: web_icon 1s cubic-bezier(.41,.96,.72,1.41) forwards;
+}
+#webworks .web_phone {
+    position: absolute;
+    top: 400px;
+    right: 170px;
+    width: 50px;
+    opacity: 0;
+    animation: web_icon 1s .5s cubic-bezier(.41,.96,.72,1.41) forwards;
+}
+#webworks .web_pad {
+    position: absolute;
+    top: 500px;
+    right: 80px;
+    width: 110px;
+    opacity: 0;
+    animation: web_icon 1s 1s cubic-bezier(.41,.96,.72,1.41) forwards;
+}
+@keyframes web_icon {
+    from {transform: scale(.4);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+/* otherworks */
+#otherworks {
+    padding: 80px 0;
+    background-color: rgba(85, 85, 79, 0.762);
+    height: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+#otherworks .other_mei {
+    position: absolute;
+    top: 450px;
+    right: -100px;
+    width: 500px;
+    animation: other_mei 2s ease-out;
+}
+
+@keyframes other_mei {
+    from{
+        right: -500px;
+        opacity: .5;
+    }
+    to {
+        right: -100px;
+        opacity: 1;
+    }
+}
+#otherworks .other_title {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 1px #fff solid;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 250px;
+    padding-right: 30px;
+}
+#otherworks .col-3 {
+    padding-top: 50px;
+}
+#otherworks h3 {
+    color: #fff;
+    font-size: 1.1em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+#otherworks h3::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    animation: other_after 3s;
+    opacity: .4;
+}
+@keyframes other_after {
+    from{
+        width: 20%;
+        opacity: 1;
+    }
+    to{
+        width: 100%;
+        opacity: .4;
+    }
+}
+#otherworks h2 {
+    font-size: 2em;
+    color: #fff;
+}
+#otherworks .box:hover {
+    position: relative;
+    top:5px;
+}
+/* aboutmei */
+#aboutmei {
+    padding-top: 150px;
+    padding-bottom: 90px;
+    background-color: #333;
+}
+#aboutmei .meiphoto {
+    width: 400px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#aboutmei .aboutme {
+    padding-left: 50px;
+}
+#aboutmei .aboutme h5 {
+    color: #fff;
+    padding: 40px 0;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+#aboutmei .aboutme h5::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    animation: aboutmei_after 3s;
+    opacity: .4;
+    margin-top: 5px;
+}
+@keyframes aboutmei_after {
+    from{
+        width: 20%;
+        opacity: 1;
+    }
+    to{
+        width: 100%;
+        opacity: .4;
+    }
+}
+#aboutmei .aboutme p {
+    color: #888;
+    letter-spacing: 2px;
+}
+#aboutmei .aboutme .aboutme_en {
+    width: 400px;
+    margin-top: 10px;
+}
+#aboutmei .aboutme .mail{
+    margin-top: 30px;
+    color: rgb(205, 117, 117);
+}
+#aboutmei .aboutme i {
+    margin-top: 5px;
+    padding: 0;
+    padding-top: 10px;
+}
+#aboutmei .aboutme .mail a {
+    color: rgb(205, 117, 117);
+}
+#aboutmei .aboutme a:hover {
+    color: rgb(254, 254, 254);
+}
+#aboutmei .meifacebook {
+    margin-left: 5px;
+}
+#aboutmei .meifacebook::after {
+    content: "前往 “Mei 插畫抽屜”";
+    display: inline;
+    font-size: 15px;
+    color: #888;
+    padding-left: 36px;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+#aboutmei .meifacebook:hover.meifacebook::after {
+    opacity: 1;
+}
+#aboutmei .copyright {
+    text-align: right;
+    display: block;
+    margin-top: 50px;
+    color: rgb(123, 101, 101);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
