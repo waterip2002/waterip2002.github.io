@@ -328,6 +328,7 @@ header .godown i {
     background:url(../images/web_images/web_bg1.jpg) 50% 0 no-repeat fixed;
     height: 1100px;
     padding: 80px 0;
+    background-size: cover;
 }
 #webworks h2 {
     font-size: 1.8em;
