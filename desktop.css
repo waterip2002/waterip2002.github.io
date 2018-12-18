@@ -417,12 +417,14 @@ header .godown i {
     height: 1200px;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 #otherworks .other_mei {
     position: absolute;
     top: 450px;
     right: -100px;
     width: 500px;
+    z-index: 1;
     animation: other_mei 2s ease-out;
 }
 
